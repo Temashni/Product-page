@@ -26,7 +26,7 @@ var swiper = new Swiper(".swiper", {
 });
 
 function changedViewedImage(event) {
-  console.log(1);
+  console.log(this.event.target.dataset.img);
   const linkToImage = this.event.target.getAttribute("src");
-  document.getElementById("imageOutput").setAttribute("src", linkToImage);
+  document.getElementById("imageOutput").setAttribute("src", this.event.target.dataset.img);
 }
