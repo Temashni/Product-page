@@ -30,15 +30,3 @@ function changedViewedImage(event) {
   const linkToImage = this.event.target.getAttribute("src");
   document.getElementById("imageOutput").setAttribute("src", this.event.target.dataset.img);
 }
-
-var mdl = document.getElementById("myModal");
-var btn = document.getElementById("myBtn")
-
-btn.onclick = function  modalWindowOn() {
-  mdl.style.display = "block";
-}
-window.onclick = function modalWindowOff(event) {
-  if (event.target == mdl) {
-    mdl.style.display = "none"
-  }
-}
